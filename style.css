@@ -1,0 +1,147 @@
+body {
+   background-color: #2d2013;
+   color: white;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin: 0;
+}
+
+.container {
+   text-align: center;
+   max-width: 850px !important;
+}
+
+button {
+   height: 32px;
+   width: 32px;
+   border: 0;
+}
+
+.btn-shuffle {
+   margin-left: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.btn-search {
+   border-radius: 0 5px 5px 0;
+   cursor: pointer;
+}
+
+.input-search {
+   border-radius: 5px 0 0 5px;
+   border: 0;
+   width: 300px;
+   padding-left: 10px;
+}
+
+
+#meals {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 20px;
+}
+
+/* meal by name */
+.meal {
+   position: relative;
+}
+
+.meal img {
+   height: 180px;
+   width: 180px;
+   border: 3px #fff solid;
+   border-radius: 5px;
+}
+
+.meal .meal-name {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #0301019e;
+   opacity: 0;
+   font-weight: 900;
+   transition: opacity 0.2s;
+}
+
+.meal .meal-name:hover {
+   opacity: 1;
+   cursor: pointer;
+}
+
+/* meal random */
+#meal-random {
+   width: 100%;
+   display: contents;
+}
+
+.meal-random {
+   width: 85%;
+}
+
+.meal-random img {
+   width: 300px;
+   border: 3px #fff solid;
+   border-radius: 5px;
+}
+
+.meal-category {
+   border: 3px #e09850 dashed;
+   border-radius: 5px;
+}
+
+.meal-category span {
+   display: block;
+}
+
+.meal-instructions p {
+   letter-spacing: 0.5px;
+   line-height: 1.5;
+}
+
+.meal-ingredients ul {
+   display: flex;
+   list-style: none;
+   flex-wrap: wrap;
+   padding: 0;
+   justify-content: center;
+}
+
+.meal-ingredients ul li {
+   background-color: #fff;
+   color: #000;
+   margin: 3px;
+   border-radius: 5px;
+   padding: 5px;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+@media (max-width: 850px) {
+   #meals {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media (max-width: 650px) {
+   #meals {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 500px) {
+   .input-search {
+      width: 100%;
+   }
+   #meals {
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .meal-random img {
+      width: 100%;
+   }
+}
+
+

@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Meal Finder</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap-grid.min.css"
+      integrity="sha512-vWtGaoxGWtwzJnP6e3YbBCE2BAEbldcuL4TVO3IbW/IFocN/XxuBv3Fuqm7t+I4eZ7p8L9iBElSUqXQUbQmarA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css"
+      integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <div class="container d-flex align-items-center flex-column p-0">
+      <h1 class="">Meal Finder</h1>
+      <div class="d-flex px-3">
+         <form id="search" class="d-flex mb-0">
+            <input class="input-search" type="text" placeholder="Search for meals or keywords">
+            <button type="submit" class="btn-search"><i class="bi bi-search"></i></button>
+         </form>
+         <button class="btn-shuffle"><i class="bi bi-shuffle"></i></button>
+      </div>
+      <h3 class="pt-lg-3" id="search-results"><!-- load data --></h3>
+      <div id="meals"><!-- load data --></div>
+      <div id="meal-random"><!-- load data --></div>
+   </div>
+   <script src="main.js"></script>
+</body>
+
+</html>
